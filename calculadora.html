@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de soma</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+            text-align: center;
+        }
+        .container{
+            border: 1px solid black;
+            border-radius: 8%;
+            box-shadow: 2px 4px 8px black;
+            text-align: center;
+            margin: 50px auto;
+            height: 250px;
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Somando valores</h1>
+        <div class="calculadora">
+            <input type="text" name="txtn1" id="txtn1"> +
+            <input type="text" name="txtn2" id="txtn2"> =
+            <input type="text" name="res" id="res"><br><br>
+            <input type="button" value="Somar" onclick="somar()">
+
+            <script>
+                function somar(){
+                    var tn1 = window.document.getElementById('txtn1')
+                    var tn2 = window.document.getElementById('txtn2')
+                    var res = window.document.getElementById('res')
+
+                    var n1 = Number(tn1.value)
+                    var n2 = Number(tn2.value)
+                    var s = n1 + n2
+                    res.value = s
+                }
+                
+            </script>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
