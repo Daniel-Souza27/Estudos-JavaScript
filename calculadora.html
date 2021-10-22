@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de soma</title>
+    <title>Calculadora</title>
+    
     <style>
-        body{
+         body{
             font: normal 18pt Arial;
+            background-color: rgb(226, 226, 225);
         }
         input{
             font: normal 18pt Arial;
             width: 100px;
             text-align: center;
         }
+        input[type = "button"]{
+            font: normal 18pt Arial;
+            width: 50px;
+            text-align: center;
+        }
+
+        input[type = "button"]:hover{
+            background-color: rgb(121, 219, 22);
+            
+        }
+        
         .container{
+            background-color: whitesmoke;
             border: 1px solid black;
             border-radius: 8%;
             box-shadow: 2px 4px 8px black;
@@ -23,35 +37,81 @@
             height: 250px;
             width: 450px;
         }
+
+       a button:hover{
+           background-color: rgb(197, 211, 238);
+       }
     </style>
+
 </head>
 <body>
 
     <div class="container">
-        <h1>Somando valores</h1>
+        
         <div class="calculadora">
-            <input type="text" name="txtn1" id="txtn1"> +
-            <input type="text" name="txtn2" id="txtn2"> =
-            <input type="text" name="res" id="res"><br><br>
-            <input type="button" value="Somar" onclick="somar()">
-
-            <script>
-                function somar(){
-                    var tn1 = window.document.getElementById('txtn1')
-                    var tn2 = window.document.getElementById('txtn2')
-                    var res = window.document.getElementById('res')
-
-                    var n1 = Number(tn1.value)
-                    var n2 = Number(tn2.value)
-                    var s = n1 + n2
-                    res.value = s
-                }
-                
-            </script>
+            <h2>Calculadora básica</h2>
+            <input type="text" name="txtn1" id="txtn1"> :
+            <input type="text" name="txtn2" id="txtn2"> = 
+            <input type="text" name="res" id="res"> <br><br>
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="subtrair()">
+            <input type="button" value="x" onclick="multiplicar()">
+            <input type="button" value="/" onclick="dividir()">
+            <a href=""><button>CE</button></a>
+           
             
 
-        </div>
+            <script>
+                
+                var tn1
+                var tn2
+                var n1
+                var n2
+                var s
 
+                function somar(){
+                    tn1 = window.document.getElementById('txtn1')
+                    tn2 = window.document.getElementById('txtn2')
+                    n1 = Number(tn1.value)
+                    n2 = Number(tn2.value)
+                    s = n1 + n2
+                    res.value = s
+
+                }
+
+                function subtrair(){
+                    tn1 = window.document.getElementById('txtn1')
+                    tn2 = window.document.getElementById('txtn2')
+                    n1 = Number(tn1.value)
+                    n2 = Number(tn2.value)
+                    s = n1 - n2
+                    res.value = s
+
+                }
+
+                function multiplicar(){
+                    tn1 = window.document.getElementById('txtn1')
+                    tn2 = window.document.getElementById('txtn2')
+                    n1 = Number(tn1.value)
+                    n2 = Number(tn2.value)
+                    s = n1 * n2
+                    res.value = s
+                    
+
+                }
+
+                function dividir(){
+                    tn1 = window.document.getElementById('txtn1')
+                    tn2 = window.document.getElementById('txtn2')
+                    n1 = Number(tn1.value)
+                    n2 = Number(tn2.value)
+                    s = n1 / n2
+                    res.value = s
+                }
+               
+
+            </script>
+        </div>
     </div>
     
 </body>
