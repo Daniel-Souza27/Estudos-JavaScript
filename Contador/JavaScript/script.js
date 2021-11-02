@@ -12,13 +12,26 @@ function contagem(){
         resultado.innerText = 'Impossivel contar.'
     }else if(txtp.value.length == 0) {
         window.alert('Passo invalido, Considerando Passo [1]')
-        for(inicio; inicio <= fim; inicio++){
-        resultado.innerHTML += `${inicio} `
-        }
+        if(inicio >= fim){
+            for(inicio; inicio >= fim; inicio--){
+                resultado.innerHTML += `${inicio} `
+                }
+        }else{
+            for(inicio; inicio <= fim; inicio++){
+                resultado.innerHTML += `${inicio} `
+                }
+        }  
     }else{
-        for(inicio; inicio <= fim;  inicio += passo){
-        resultado.innerHTML += `${inicio} `
+        if(inicio >= fim){
+            for(inicio; inicio >= fim; inicio -= passo){
+                resultado.innerHTML += `${inicio} ` 
+            }
+        }else{
+            for(inicio; inicio <= fim;  inicio += passo){
+                resultado.innerHTML += `${inicio} `
+            } 
         }
+        
     }   
 
 }   
