@@ -7,8 +7,28 @@
     <title>formulario-bootstrap</title>
 </head>
 <body>
-    <form>
+    <div class="container-formulario">
+        <div class="formulario">
+            <form method="post" action="form.php">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                     <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                     <input type="text" name="email"  id="exampleInputEmail1" aria-describedby="emailHelp" class="form-control" placeholder="seu@email.com.br" required>
+                </div>
+                <div class="form-group">
+                    <label for="nascimento">Nascimento</label>
+                     <input type="date" name="nascimento" id="nascimento" class="form-control"  required min="2016/01/01">
+                </div> 
+                <div class="botao">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
 
-      </form>
+    </div>
+
 </body>
 </html>
