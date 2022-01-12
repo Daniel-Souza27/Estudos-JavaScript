@@ -23,3 +23,6 @@ body{
 .botao{
     margin-top: 10px;
 }
+input, label{
+    margin-top: 10px;
+}
