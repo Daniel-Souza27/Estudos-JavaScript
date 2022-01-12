@@ -18,13 +18,22 @@ header .header-black{
 header .header-black li{
     background: url('../img/clubs.png') no-repeat;
     display: inline-block;
+    margin: 4px 8px;
 }
+header .header-black li.club-01{
+    background-position: 0px 0px;
+}
+
+header .header-black li.club-02{
+    background-position: -48px 0px;
+}
+
 
 header .header-black li a{
     height: 32px;
     width: 32px;
     display: block;
-    margin: 4px;
+    
 }
 
 header #logotipo{
