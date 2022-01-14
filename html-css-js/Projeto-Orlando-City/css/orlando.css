@@ -96,7 +96,7 @@ header #logotipo {
 	top: 20px;
 }
 #menu {
-	margin: 26px 0;
+	margin: 12px 0;
 }
 #menu li {
 	display: inline-block;
@@ -113,6 +113,7 @@ header #logotipo {
 	border: none;
 	height: 30px;
 	line-height: 30px;
+	padding-left: 8px;
 }
 
 #menu li.search input::-webkit-input-placeholder{
@@ -139,4 +140,8 @@ header #logotipo {
 	font-size: 16px;
 	padding: 10px 25px;
 	font-weight: bold;
+}
+
+#menu li.search .input-group{
+	top: 8px;
 }
