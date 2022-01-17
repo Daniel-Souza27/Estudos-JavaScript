@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27'); 
-
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
 
 
 header {
