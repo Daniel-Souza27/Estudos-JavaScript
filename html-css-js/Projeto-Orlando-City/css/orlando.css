@@ -5,9 +5,9 @@
 header {
 	width: 100%;
 	height: 150px;
-	background-color: #5E299A;
+	background-color: rgba(94, 41, 154, .8);
 	z-index: 2;
-	position: relative;
+    position: relative;
 }
 header .container {
 	position: relative;
@@ -104,54 +104,61 @@ header #logotipo {
 	display: inline-block;
 	font-family: "OpenSans";
 }
-
-#menu li.search{
+#menu li.search {
 	width: 182px;
 }
-
-#menu li.search input{
-	background-color: #5c2d90;
+#menu li.search input {
+	background-color: #5C2D90;
 	color: #fff;
 	border: none;
 	height: 30px;
 	line-height: 30px;
 	padding-left: 8px;
 }
-
-#menu li.search input::-webkit-input-placeholder{
-	color: #fff;
+#menu li.search ::-webkit-input-placeholder {
+	color: #fff;	
 }
-
-#menu li.search button{
+#menu li.search button {
 	background: none;
 	border: none;
 	position: absolute;
-	right: 3px;
-	top: 7px;
-
+    right: 3px;
+    top: 7px;
 }
-
-#menu li.search button i{
+#menu li.search button i {
 	font-size: 14px;
-	color: rgba(225, 225, 225, .5);
-	
+	color: rgba(255, 255, 255, .5);
 }
-
 #menu li a {
 	color: #FFF;
 	font-size: 16px;
 	padding: 10px 25px;
 	font-weight: bold;
 }
-
-#menu li.search .input-group{
+#menu li.search .input-group {
 	top: 8px;
 }
-
-#banner{
+#banner {
 	width: 100%;
 	height: 728px;
 	position: relative;
-	background: url("../img/banner.jpg");
-	top: -110;
+	background: url("../img/banner.jpg") no-repeat;
+	background-position: 0px -100px;
+	top: -110px;
+}
+#banner h1 {
+	color: #fff;
+	top: 300px;
+	position: relative;
+	font-size: 92px;
+	text-shadow:2px 2px 2px rgba(0, 0, 0, .45);
+	font-family: 'OpenSans-Light';
+	margin-left: 50px;
+}
+#banner h1 small {
+	font-size: 32px;
+	display: block;
+	color: #FFF;
+	font-family: 'OpenSans';
+	font-weight: bold;
 }
