@@ -271,3 +271,17 @@ header #logotipo {
 	margin: 0 auto;
 	max-width: 400px;
 }
+
+/* Footer */
+
+footer row{
+	width: 100%;
+}
+footer row-cinza-claro{
+	height: 200px;
+	background-color: #171f26;
+}
+footer row-cinza-escuro{
+	height: 60px;
+	background-color: #11171d;
+}
