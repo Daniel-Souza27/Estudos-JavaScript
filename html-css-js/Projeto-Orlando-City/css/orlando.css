@@ -208,3 +208,9 @@ header #logotipo {
 	font-family: 'OpenSans';
 	margin-left: 3px;
 }
+
+#estatisticas{
+	background-color: #5E299A;
+	width: 100%;
+	height: 200px;
+}
