@@ -154,6 +154,7 @@ header #logotipo {
 	top: -130px;
 }
 #banner h1 {
+	transition: 1s;
 	color: #fff;
 	top: 300px;
 	position: relative;
@@ -162,6 +163,12 @@ header #logotipo {
 	font-family: 'OpenSans-Light';
 	margin-left: 50px;
 }
+#banner h1.efeito{
+	color: red;
+	 font-size: 12em;
+	 
+}
+
 
 #banner h1::before {
 	color: #fff;
