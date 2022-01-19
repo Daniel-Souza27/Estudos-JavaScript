@@ -270,6 +270,16 @@
 
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#logotipo").on("mouseenter",function(){
+					$("#banner h1").css({"color":"red", "font-size":"12em","transition":"1s"});
+				});
+				$("#logotipo").on("mouseout",function(){
+					$("#banner h1").css({"color":"#fff", "font-size":"92px","transition":"1s"});
+				});
+			});
+		</script>
 
 	</body>
 </html>
