@@ -301,11 +301,13 @@
 
 						
 						var video = $("video")[0];
+
 						if($(this).hasClass("btn-success")){
 							$(this).text("STOP");
-							video.play
+							video.play();
 						}else{
-							$(this).text("PLAY")
+							$(this).text("PLAY");
+							video.pause();
 						}
 						$(this).toggleClass("btn-success btn-danger");
 					});
