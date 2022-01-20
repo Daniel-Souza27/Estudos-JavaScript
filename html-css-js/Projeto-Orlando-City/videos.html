@@ -95,6 +95,89 @@
 
 				</div>
 			</div>
+			<div id="news" class="container" style="top:0">
+				
+				<div class="row text-center">
+					<h2>Latest News</h2>
+					<hr>	
+				</div>				
+
+				<div class="row thumbnails owl-carousel owl-theme">
+					<div class="item" data-video="highlights.mp4">
+						
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Hightlights</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015.mp4">
+						
+						<div class="item-inner">
+							<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+							<h3>Orlando City Fundation</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="highlights.mp4">
+						
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Hightlights</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015.mp4">
+						
+						<div class="item-inner">
+							<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+							<h3>Orlando City Fundation</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="highlights.mp4">
+						
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Hightlights</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015.mp4">
+						
+						<div class="item-inner">
+							<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+							<h3>Orlando City Fundation</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="highlights.mp4">
+						
+						<div class="item-inner">
+							<img src="img/highlights.jpg" alt="Noticia">
+							<h3>Hightlights</h3>
+						</div>
+						
+					</div>
+
+					<div class="item" data-video="Orlando_City_Foundation_2015.mp4">
+						
+						<div class="item-inner">
+							<img src="img/Orlando_City_Foundation_2015.jpg" alt="Noticia">
+							<h3>Orlando City Fundation</h3>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
 
 		</section>
 
@@ -191,48 +274,18 @@
 
 		</footer>
 
+		
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/efeitos.js"></script>
 		<script>
-			$(document).ready(function(){
-				$("#logotipo").on("mouseenter",function(){
-					$("#banner h1").addClass("efeito");
-				}).on("mouseout",function(){
-					$("#banner h1").removeClass("efeito");
+			$(function(){
+				$(".thumbnails .item").on("click", function(){
+					
+					$("video").attr("src","mp4/"+$(this).data('video'));
 				});
 
-				$("#input-search").on("focus", function(){
-					$("li.search").addClass("ativo");
-				}).on("blur", function(){
-					$("li.search").removeClass("ativo");
-				});
-
-				$(".thumbnails").owlCarousel({
-					loop: true,
-					// margin: 20,
-					// nav: true,
-					// navText: ["Anterior","Próximo"],
-					responsive: {
-						0:{
-							item: 1
-						},
-						
-						480:{
-							item: 3
-						},
-
-						768:{
-							item: 4
-						},
-
-						1200:{
-							item: 6
-						}
-
-
-					}
-				});
 			});
 		</script>
 
