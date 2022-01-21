@@ -92,7 +92,12 @@
 
 					<div class="row">
 						<div class="player">
-							<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg"></video>
+							<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg">
+								
+								<track kind="captions" label="Portugues" src="vtt/legendas.vtt" 
+								srclang="pt-br" default />
+
+							</video>
 						</div>
 						<input type="range" id="volume" min="0" max="1" step="0.01" value="0.01">
 						<button type="button" id="btn-play-pause" class="btn btn-success">PLAY</button>
