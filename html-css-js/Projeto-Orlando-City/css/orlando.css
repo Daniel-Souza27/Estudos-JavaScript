@@ -104,6 +104,10 @@ header #logotipo {
 	top: 20px;
 	z-index: 3;
 }
+#banner h1.efeito {
+	color:red;
+	font-size:12em;
+}
 #menu {
 	margin: 12px 0;
 }
@@ -113,10 +117,10 @@ header #logotipo {
 }
 #menu li.search {
 	width: 182px;
-	transition: 1s;
-	
+	transition-timing-function: cubic-bezier(1,-.91,.91,1);
+	transition-duration: 1s;
 }
-#menu li.search.ativo{
+#menu li.search.ativo {
 	width: 300px;
 }
 #menu li.search input {
@@ -127,7 +131,7 @@ header #logotipo {
 	line-height: 30px;
 	padding-left: 8px;
 }
-#menu li.search.ativo input{
+#menu li.search.ativo input {
 	width: 300px;
 }
 #menu li.search ::-webkit-input-placeholder {
@@ -150,7 +154,6 @@ header #logotipo {
 	padding: 10px 25px;
 	font-weight: bold;
 }
-
 #menu li.search .input-group {
 	top: 8px;
 }
@@ -163,7 +166,7 @@ header #logotipo {
 	top: -130px;
 }
 #banner h1 {
-	transition: 1s;
+	transition:1s;
 	color: #fff;
 	top: 300px;
 	position: relative;
@@ -171,18 +174,6 @@ header #logotipo {
 	text-shadow:2px 2px 2px rgba(0, 0, 0, .45);
 	font-family: 'OpenSans-Light';
 	margin-left: 50px;
-}
-#banner h1.efeito{
-	color: red;
-	 font-size: 12em;
-	 
-}
-
-
-#banner h1::before {
-	color: #fff;
-	font-size: 92px;
-	transition: 1s;
 }
 #banner h1 small {
 	font-size: 32px;
@@ -222,12 +213,11 @@ header #logotipo {
 	font-size: 18px;
 	font-family: 'OpenSans';
 }
-#news .thumbnails .item-inner{
-	padding: 10px
+#news .thumbnails .item-inner {
+	padding: 10px;
 }
-
-#news .thumbnails .item-inner img{
-	width: 100%
+#news .thumbnails .item-inner img {
+	width: 100%;
 }
 #estatisticas {
 	background-color: #5E299A;
@@ -396,7 +386,6 @@ footer .list-socials i {
 	font-size: 16px;
 	margin: 7px auto;
 }
-
-video{
-	width: 70%;
+video {
+	width: 60%;
 }
