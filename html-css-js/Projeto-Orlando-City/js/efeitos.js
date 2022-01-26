@@ -26,7 +26,10 @@ $(document).ready(function(){
       items : 4
  
   	});
+	
+	var owl = $(".thumbnails").data('owlCarousel');
 
+<<<<<<< HEAD:js/efeitos.js
   	var owl = $(".thumbnails").data('owlCarousel');
 
   	$('#btn-news-prev').on("click", function(){
@@ -51,4 +54,13 @@ $(document).ready(function(){
 
   	});
 
+=======
+	$('#btn-news-prev').on("click",function(){
+		owl.prev();
+	});
+
+	$('#btn-news-next').on("click",function(){
+		owl.next();
+	});
+>>>>>>> parent of 1d74779 (a):html-css-js/Projeto-Orlando-City/js/efeitos.js
 });

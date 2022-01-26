@@ -390,10 +390,20 @@ footer .list-socials i {
 video {
 	width: 60%;
 }
+<<<<<<< HEAD:css/orlando.css
 #btn-bars, #btn-search,
 #btn-news-prev, #btn-news-next {
 	display: none;
 }
 .page-up {
 	display: none!important;
+=======
+
+#btn-bars, #btn-search{
+	display: none;
+}
+
+#btn-news-prev, #btn-news-next{
+	display: none;
+>>>>>>> parent of 1d74779 (a):html-css-js/Projeto-Orlando-City/css/orlando.css
 }
