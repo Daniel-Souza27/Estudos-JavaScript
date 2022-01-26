@@ -208,6 +208,10 @@
 		border-top: #CCC 1px solid;
 		border-bottom: #CCC 1px solid;
 	}
+	header.open-menu  #menu-mobile {
+		margin: 20px;
+	
+	}
 	header.open-menu  #menu-mobile li a{
 		color: #633392;
 		font-family: 'OpenSans';	
